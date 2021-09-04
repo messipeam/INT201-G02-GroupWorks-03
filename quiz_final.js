@@ -73,8 +73,8 @@ const player1 = {
 //case2
 const player2 = {
     name: "Peter",
-    questionSelect: [question2, question1, question2,question5], //กำหนดเป็น Array โดยอ้างถึง object question ที่เลือก
-    answerSelect: ["a", "a", "b","c"], //เก็บคำตอบเป็น Array
+    questionSelect: [question2, question1, question3,question5], //กำหนดเป็น Array โดยอ้างถึง object question ที่เลือก
+    answerSelect: ["a", "c", "b","c"], //เก็บคำตอบเป็น Array
     totalScore: function () {
       //สร้าง function ในการเทียบคำตอบที่ผู้เล่นเลือกกับคำตอบที่ถูกต้องและสรุปคะแนนที่ได้ออกมา
       let score = 0; //กำหนด score = 0
@@ -94,7 +94,7 @@ const player2 = {
   const player3 = {
     name: "Tony",
     questionSelect: [question3, question2, question1], //กำหนดเป็น Array โดยอ้างถึง object question ที่เลือก
-    answerSelect: ["a", "b", "c"], //เก็บคำตอบเป็น Array
+    answerSelect: ["b", "b", "c"], //เก็บคำตอบเป็น Array
     totalScore: function () {
       //สร้าง function ในการเทียบคำตอบที่ผู้เล่นเลือกกับคำตอบที่ถูกต้องและสรุปคะแนนที่ได้ออกมา
       let score = 0; //กำหนด score = 0
@@ -171,6 +171,14 @@ function result() {
              c.) ${player2.questionSelect[2].answer.c}
   
     Player Answer : ${player2.answerSelect[2]}
+
+    Question Select 4:  ${player2.questionSelect[3].question}
+  
+    Choice : a.) ${player2.questionSelect[3].answer.a}
+             b.) ${player2.questionSelect[3].answer.b}
+             c.) ${player2.questionSelect[3].answer.c}
+  
+    Player Answer : ${player2.answerSelect[3]}
   
     Total Score : ${player2.totalScore()}
 
